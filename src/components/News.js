@@ -14,7 +14,6 @@ const StyledDiv = styled.div`
 `
 const News = () => {
   const [data, setData] = useState({ articles: []})
-  const [query, setQuery] = useState("")
   const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
@@ -35,16 +34,11 @@ const News = () => {
     fetchData()
   }, [])
 
-  const fetchNews = async (e) => {
-    e.preventDefault()
-    setIsLoading(true)
-    const result = await axios(`https://hn.algolia.com/api/v1/search?query=${query}`)
-    setData(result.data)
-    setIsLoading(false)
-  }
   return (
     <StyledDiv>
-      {
+      {isLoading ? 
+      <span>Loading...</span> 
+      :
       <ul>
         {data.articles.map(item => {
           return (

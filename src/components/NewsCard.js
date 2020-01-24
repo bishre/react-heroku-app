@@ -48,7 +48,6 @@ const NewsCard = (props) => {
   let myDate = new Date(`${item.publishedAt}`);
   const publishedTime = Date.now() - myDate.getTime();
   const hours = Math.floor((publishedTime / (1000 * 60 * 60)) % 24);
-  console.log(hours)
   return (
     <StyledLi key={uuid.v4()} className="news-item">
       <div className="news-card" style={{backgroundImage: `url(${item.urlToImage})`}}>
