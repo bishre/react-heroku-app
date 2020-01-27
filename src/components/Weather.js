@@ -3,10 +3,14 @@ import axios from "axios"
 import styled from "styled-components"
 
 const StyledDiv = styled.div`
-  max-width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  .temperature {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .wind-speed {
+    text-align: center;
+  }
 `
 
 const Weather = () => {
@@ -25,16 +29,14 @@ const Weather = () => {
   }, [])
 
   const { weather, wind: { speed }, main: { temp }} = data
-  
+  console.log(weather[0])
   return (
     <StyledDiv>
-      {weather.map(item => 
-        <span key={item.id}>
-          Conditions: {item.description}
-        </span>
-      )}
-      <span>Temperature: {Math.floor(temp-273.15)}&deg;C</span>
-      <span>Wind speed: {speed}m/s</span>
+        <h2 className="description" key={weather.id}>
+          {weather.description}
+        </h2>
+      <h3 className="temperature">{Math.floor(temp-273.15)}&deg;C</h3>
+      <p className="wind-speed">{speed}m/s</p>
     </StyledDiv>
   )
 }

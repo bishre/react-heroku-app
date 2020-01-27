@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const StyledLi = styled.li`
   list-style: none;
-  margin: 10px;
+  margin: 0 auto;
   position: relative;
   .news-card {
     margin: 0 auto;
