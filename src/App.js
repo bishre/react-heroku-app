@@ -6,6 +6,7 @@ import { Route } from "react-router-dom"
 import VantaaJobs from './components/vantaaJobs';
 import UIContextProvider from './context/uiContext';
 import Footer from './components/footer';
+import MastHead from './components/masthead';
 
 function App() {
   const [isMobile, setIsMobile] = useState(null)
@@ -27,6 +28,7 @@ function App() {
     <div className="App">
       <UIContextProvider>
         <Navbar isMobile={isMobile}/>
+        <Route exact path="/" component={MastHead} />
         <Route path="/jobs" component={VantaaJobs}/>
         <Route path="/news" component={News}/>
         <Route path="/weather" component={Weather}/>
