@@ -4,25 +4,25 @@ import styled from "styled-components"
 import Facebook from "../icons/facebook"
 import Twitter from "../icons/twitter"
 import Linkedin from "../icons/linkedin"
+import Logo from "../icons/logo"
 
 const Wrapper = styled.div`
   position: fixed;
   display: flex;
   justify-content: space-between;
   bottom: 0;
-  background-color: lightblue;
-  width: 100%;
-  height: 100px;
+  background-color: #333;
+  width: 100vw;
 
   .nav-links {
     display: flex;
     flex-flow: column wrap;
     padding: 10px;
-    cursor: pointer;
     a {
       margin-bottom: 5px;
       text-decoration: none;
-      color: black;
+      color: white;
+      cursor: pointer;
     }
   }
 
@@ -32,20 +32,18 @@ const Wrapper = styled.div`
     font-weight: bold;
     a {
       text-decoration: none;
-      color: black;
+      color: white;
+
+      &:hover {
+      color:#ddd;
+    }
     }
   }
 
   .some-icons {
     padding: 15px;
-    .facebook svg {
-      fill: #3b5998;
-    }
-    .twitter svg {
-      fill: #00acee;
-    }
-    .linkedin path {
-      fill: #0e76a8;
+    svg {
+      fill: white;
     }
   }
 ` 
@@ -58,7 +56,9 @@ const Footer = () => {
         <Link to="weather">Weather</Link>
       </div>
       <div className="brand-logo">
-        <Link to="home">BS</Link>
+        <Link to="home">
+          <Logo />
+        </Link>
       </div>
       <div className="some-icons">
         <a href="https://www.facebook.com/bibhor.shrestha.733" target="_blank" className="facebook"><Facebook /></a>

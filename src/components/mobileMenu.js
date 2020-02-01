@@ -11,9 +11,9 @@ const StyledDiv = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: lightblue;
+  background: #333;
   padding: 50px 20px;
-  z-index: 1;
+  z-index: 100;
   transform: translateY(-100vh);
   transition: transform 0.4s ease-in-out;
   
@@ -26,7 +26,7 @@ const StyledDiv = styled.div`
   }
 
   a {
-    padding-bottom: 10px;
+    padding-bottom: 18px;
   }
 `
 

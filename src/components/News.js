@@ -6,10 +6,11 @@ import NewsCard from "./NewsCard"
 const StyledDiv = styled.div`
   display: block;
   max-width: 100%;
+  text-align: center;
   ul {
     display: flex;
     flex-flow: row wrap;
-    padding: 0;
+    padding: 50px 0 100px;
   }
 `
 const News = () => {
@@ -36,6 +37,7 @@ const News = () => {
 
   return (
     <StyledDiv>
+      <h2>Headlines</h2>
       {isLoading ? 
       <span>Loading...</span> 
       :

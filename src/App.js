@@ -21,7 +21,7 @@ function App() {
   }, [])
 
   const checkIfMobile = () => {
-    const isMobile = window.innerWidth <= 425
+    const isMobile = window.innerWidth <= 768
     setIsMobile(isMobile)
   }
   return (
@@ -29,6 +29,7 @@ function App() {
       <UIContextProvider>
         <Navbar isMobile={isMobile}/>
         <Route exact path="/" component={MastHead} />
+        <Route path="/home" component={MastHead} />
         <Route path="/jobs" component={VantaaJobs}/>
         <Route path="/news" component={News}/>
         <Route path="/weather" component={Weather}/>

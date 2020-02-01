@@ -4,6 +4,16 @@ import axios from "axios"
 import Job from "./job"
 
 const StyledDiv = styled.div`
+  text-align: center;
+
+  h2 {
+    padding: 16px 8px;
+  }
+
+  ul {
+    padding: 0;
+  }
+
   li {
     list-style: none;
     padding-bottom: 10px;
@@ -28,7 +38,7 @@ const VantaaJobs = () => {
 
   return (
     <StyledDiv>
-      Jobs in city of Vantaa 
+      <h2>Jobs in city of Vantaa</h2>
         <ul>
           {jobs && jobs.map(job => {
             return (

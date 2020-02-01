@@ -6,14 +6,14 @@ const StyledDiv = styled.div`
   display: block;
   position: absolute;
   right: 0;
-  padding: 5px;
+  padding: 10px;
   span {
     position: relative;
     display: block;
     width: 20px;
     height: 2px;
     margin-bottom: 5px;
-    background-color: black;
+    background-color: white;
   }
 
   &.open span:nth-child(1) {
