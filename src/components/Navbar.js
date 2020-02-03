@@ -47,7 +47,7 @@ const Navbar = props => {
         <Link to="news">News</Link>
         <Link to="jobs">Jobs</Link>
         <Link to="weather">Weather</Link>
-        <Link to="posts">Posts</Link>
+        {/* <Link to="posts">Posts</Link> */}
       </StyledDiv>
     )}
     </>

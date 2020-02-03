@@ -57,7 +57,7 @@ const Footer = () => {
         <Link to="news">News</Link>
         <Link to="jobs">Jobs</Link>
         <Link to="weather">Weather</Link>
-        <Link to="posts">Posts</Link>
+        {/* <Link to="posts">Posts</Link> */}
       </div>
       <div className="brand-logo">
         <Link to="home">
