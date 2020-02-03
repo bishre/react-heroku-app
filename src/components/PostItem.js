@@ -37,7 +37,7 @@ const PostItem = (props) => {
     <StyledLi>
       <div>
         <h5>{post.title.rendered}</h5>
-        <img src={imageUrl}/>
+        <img src={imageUrl} alt=""/>
         <small>By: <strong>{author}</strong></small>
         <div dangerouslySetInnerHTML={{ __html: post.content.rendered}}></div>
         <h4>{formatDate(post.date, "dd mmm yyyy")}</h4>
