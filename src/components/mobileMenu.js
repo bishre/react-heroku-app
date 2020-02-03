@@ -38,6 +38,7 @@ const MobileMenu = () => {
         <Link to="news" onClick={toggleMenu}>News</Link>
         <Link to="jobs" onClick={toggleMenu}>Jobs</Link>
         <Link to="weather" onClick={toggleMenu}>Weather</Link>
+        <Link to="posts" onClick={toggleMenu}>Posts</Link>
       </StyledDiv>
     </CSSTransition>
   )

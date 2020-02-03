@@ -7,6 +7,7 @@ import VantaaJobs from './components/vantaaJobs';
 import UIContextProvider from './context/uiContext';
 import Footer from './components/footer';
 import MastHead from './components/masthead';
+import Posts from './components/Posts';
 
 function App() {
   const [isMobile, setIsMobile] = useState(null)
@@ -33,6 +34,7 @@ function App() {
         <Route path="/jobs" component={VantaaJobs}/>
         <Route path="/news" component={News}/>
         <Route path="/weather" component={Weather}/>
+        <Route path="/posts" component={Posts}/>
         <Footer />
       </UIContextProvider>
     </div>

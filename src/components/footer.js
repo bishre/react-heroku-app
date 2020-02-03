@@ -42,6 +42,9 @@ const Wrapper = styled.div`
 
   .some-icons {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     svg {
       fill: white;
     }
@@ -54,6 +57,7 @@ const Footer = () => {
         <Link to="news">News</Link>
         <Link to="jobs">Jobs</Link>
         <Link to="weather">Weather</Link>
+        <Link to="posts">Posts</Link>
       </div>
       <div className="brand-logo">
         <Link to="home">
