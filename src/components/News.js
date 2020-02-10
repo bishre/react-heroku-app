@@ -4,8 +4,6 @@ import styled from "styled-components"
 import NewsCard from "./NewsCard"
 
 const StyledDiv = styled.div`
-  display: block;
-  max-width: 100%;
   text-align: center;
   ul {
     display: flex;

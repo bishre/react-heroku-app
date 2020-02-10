@@ -18,8 +18,8 @@ const PostItem = (props) => {
 
   useEffect(() => {
     const { featured_media, author } = post
-    const getImageUrl = axios.get(`http://buildmynet.com/wp-json/wp/v2/media/${featured_media}`)
-    const getAuthor = axios.get(`http://buildmynet.com/wp-json/wp/v2/users/${author}`)
+    const getImageUrl = axios.get(`https://buildmynet.com/wp-json/wp/v2/media/${featured_media}`)
+    const getAuthor = axios.get(`https://buildmynet.com/wp-json/wp/v2/users/${author}`)
 
     Promise.all([getImageUrl, getAuthor]).then(res => {
       setImageUrl(res[0].data.media_details.sizes.full.source_url)

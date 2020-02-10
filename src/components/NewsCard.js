@@ -5,11 +5,13 @@ import styled from "styled-components"
 const StyledLi = styled.li`
   list-style: none;
   margin: 0 auto;
+  width: 100%;
   position: relative;
   margin-bottom: 20px;
+  padding: 16px;
+
   .news-card {
     margin: 0 auto;
-    width: 300px;
     height: 300px;
     z-index: 0;
     background-size: cover;
@@ -41,6 +43,10 @@ const StyledLi = styled.li`
     transform: scale(1.05);
     transition: 0.5s ease-out;
     cursor: pointer;
+  }
+
+  @media only screen and (min-width: 720px) {
+    width: 50%;
   }
 `
 

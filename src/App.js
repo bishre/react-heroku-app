@@ -8,6 +8,7 @@ import UIContextProvider from './context/uiContext';
 import Footer from './components/footer';
 import MastHead from './components/masthead';
 import Posts from './components/Posts';
+// import Images from './components/images'
 
 function App() {
   const [isMobile, setIsMobile] = useState(null)
@@ -35,6 +36,7 @@ function App() {
         <Route path="/news" component={News}/>
         <Route path="/weather" component={Weather}/>
         <Route path="/posts" component={Posts}/>
+        {/* <Route path="/images" component={Images}/> */}
         <Footer />
       </UIContextProvider>
     </div>

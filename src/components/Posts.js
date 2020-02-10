@@ -18,7 +18,7 @@ const Posts = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios("http://buildmynet.com/wp-json/wp/v2/posts")
+      const result = await axios("https://buildmynet.com/wp-json/wp/v2/posts")
       console.log(result)
       setPosts(result.data)
     }

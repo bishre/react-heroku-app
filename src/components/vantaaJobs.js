@@ -4,19 +4,19 @@ import axios from "axios"
 import Job from "./job"
 
 const StyledDiv = styled.div`
-  text-align: center;
-
+  padding-top: 20px;
   h2 {
+    text-align: center;
     padding: 16px 8px;
   }
 
   ul {
-    padding: 0;
+    padding: 16px;
   }
 
   li {
     list-style: none;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 `
 
@@ -25,7 +25,7 @@ const VantaaJobs = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      let url = "http://gis.vantaa.fi/rest/tyopaikat/v1/Opetusala"
+      let url = "https://gis.vantaa.fi/rest/tyopaikat/v1/Opetusala"
       try {
         const result = await axios(url)
         setJobs(result.data)
