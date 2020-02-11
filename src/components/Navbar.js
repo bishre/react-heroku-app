@@ -7,8 +7,6 @@ import MobileMenu from "./mobileMenu"
 const StyledDiv = styled.div`
   display: flex;
   width: 100%;
-  position: fixed;
-  top: 0;
   overflow: hidden;
   background: #333;
   height: 50px;
